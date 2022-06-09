@@ -216,7 +216,7 @@ function(builtin_to_cpp bit os_name arch supported_archs supported_oses resultFi
         endif()
     elseif (APPLE)
         if (${os_name} STREQUAL "ios")
-            # -isystem/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/
+            # -isystem/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/
             set(includePath -isystem${ISPC_IOS_SDK_PATH}/usr/include)
         elseif (${os_name} STREQUAL "linux" OR ${os_name} STREQUAL "android" OR ${os_name} STREQUAL "freebsd")
             if (${target_arch} STREQUAL "armv7")

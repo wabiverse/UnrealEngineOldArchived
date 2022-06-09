@@ -29,7 +29,7 @@ build_ios()
     local ver=$1
     local arch="$2"
     local output="../.build/ios_${ver}_${arch}"
-    local sdk="--sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
+    local sdk="--sysroot=/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
     local objcflags="-std=c++11 -x objective-c++ -miphoneos-version-min=$ver $sdk -arch $arch"
     local cppflags="-std=c++11 -miphoneos-version-min=$ver $sdk -arch $arch"
     local ldflags="-framework Metal -framework CoreFoundation -fobjc-link-runtime"
@@ -50,7 +50,7 @@ build_tvos()
     local ver=$1
     local arch="$2"
     local output="../.build/tvos_${ver}_${arch}"
-    local sdk="--sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk"
+    local sdk="--sysroot=/Applications/Xcode-beta.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk"
     local objcflags="-std=c++11 -x objective-c++ -mtvos-version-min=$ver $sdk -arch $arch"
     local cppflags="-std=c++11 -mtvos-version-min=$ver $sdk -arch $arch"
     local ldflags="-framework Metal -framework CoreFoundation -fobjc-link-runtime"

@@ -3838,7 +3838,7 @@ LWS_VISIBLE LWS_EXTERN int
 lws_serve_http_file_fragment(struct lws *wsi);
 //@}
 
-
+#if !defined(__MACOSX__) && !defined(__APPLE__)
 enum http_status {
 	HTTP_STATUS_CONTINUE					= 100,
 
@@ -3877,6 +3877,8 @@ enum http_status {
 	HTTP_STATUS_GATEWAY_TIMEOUT,
 	HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED,
 };
+#endif /* !defined(__MACOSX__) && !defined(__APPLE__) */
+
 /*! \defgroup html-chunked-substitution HTML Chunked Substitution
  * \ingroup http
  *

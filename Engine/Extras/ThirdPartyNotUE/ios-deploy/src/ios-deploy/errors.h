@@ -318,7 +318,7 @@ static errorcode_to_id_t errorcode_to_id[] = {
 
 const int errorcode_to_id_count = sizeof(errorcode_to_id) / sizeof(errorcode_to_id_t);
 
-// Taken from /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/English.lproj/Localizable.strings
+// Taken from /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/English.lproj/Localizable.strings
 error_id_to_message_t error_id_to_message[] = {
 	{ "kAMDAPIInternalError", "There was an internal API error." },
 	{ "kAMDAlreadyArchivedError", "The application is already archived." },

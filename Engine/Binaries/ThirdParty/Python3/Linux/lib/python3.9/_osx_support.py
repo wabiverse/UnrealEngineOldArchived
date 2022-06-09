@@ -202,7 +202,7 @@ def _find_appropriate_compiler(_config_vars):
     #    The OSX location for the compiler varies between OSX
     #    (or rather Xcode) releases.  With older releases (up-to 10.5)
     #    the compiler is in /usr/bin, with newer releases the compiler
-    #    can only be found inside Xcode.app if the "Command Line Tools"
+    #    can only be found inside Xcode-beta.app if the "Command Line Tools"
     #    are not installed.
     #
     #    Furthermore, the compiler that can be used varies between

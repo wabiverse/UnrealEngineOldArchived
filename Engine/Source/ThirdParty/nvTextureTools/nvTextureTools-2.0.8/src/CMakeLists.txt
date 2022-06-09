@@ -1,4 +1,8 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
+
+set(CMAKE_C_COMPILER "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man/man1/clang.1")
+set(CMAKE_CXX_COMPILER "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man/man1/clang++.1")
+
 PROJECT(NV)
 ENABLE_TESTING()
 

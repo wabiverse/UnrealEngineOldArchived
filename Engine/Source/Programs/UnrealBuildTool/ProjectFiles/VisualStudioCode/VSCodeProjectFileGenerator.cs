@@ -671,7 +671,7 @@ namespace UnrealBuildTool
 
 			if (HostPlatform == UnrealTargetPlatform.Mac)
 			{
-				string SysRoot = SysRootPath != null ? SysRootPath.FullName : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk";
+				string SysRoot = SysRootPath != null ? SysRootPath.FullName : "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk";
 				OutFile.BeginArray("compilerArgs");
 				{
 					OutFile.AddUnnamedField("-isysroot");

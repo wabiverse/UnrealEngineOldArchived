@@ -81,7 +81,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare -Wunreachable-code
 BASECPPFLAGS=	
-CONFIGURE_CFLAGS=	-arch arm64 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=10.15 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include
+CONFIGURE_CFLAGS=	-arch arm64 -arch x86_64 -isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=13.0 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -90,8 +90,8 @@ CONFIGURE_CFLAGS_NODIST= -std=c99 -Wextra -Wno-unused-result -Wno-unused-paramet
 # Use it when a linker flag should _not_ be part of the distutils LDFLAGS
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=
-CONFIGURE_CPPFLAGS=	-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=10.15 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include
-CONFIGURE_LDFLAGS=	-arch arm64 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk /Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a /Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a -mmacosx-version-min=10.15
+CONFIGURE_CPPFLAGS=	-isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=13.0 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include
+CONFIGURE_LDFLAGS=	-arch arm64 -arch x86_64 -isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk /Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a /Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a -mmacosx-version-min=13.0
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -171,7 +171,7 @@ EXE=
 BUILDEXE=	.exe
 
 # Short name and location for Mac OS X Python framework
-UNIVERSALSDK=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk
+UNIVERSALSDK=/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
 PYTHONFRAMEWORK=	
 PYTHONFRAMEWORKDIR=	no-framework
 PYTHONFRAMEWORKPREFIX=	
@@ -215,7 +215,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/enginesharedmac/Deploy/Python3.9.7' '--enable-shared' '--enable-universalsdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' '--with-universal-archs=universal2' '--enable-optimizations' '--with-openssl=/Users/enginesharedmac/Deploy/OpenSSL/1.1.1k' 'CFLAGS=-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -mmacosx-version-min=10.15 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include' 'CPPFLAGS=-mmacosx-version-min=10.15 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include' 'LDFLAGS=/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a /Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a -mmacosx-version-min=10.15'
+CONFIG_ARGS=	 '--prefix=/Users/enginesharedmac/Deploy/Python3.9.7' '--enable-shared' '--enable-universalsdk=/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk' '--with-universal-archs=universal2' '--enable-optimizations' '--with-openssl=/Users/enginesharedmac/Deploy/OpenSSL/1.1.1k' 'CFLAGS=-isysroot /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -mmacosx-version-min=13.0 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include' 'CPPFLAGS=-mmacosx-version-min=13.0 -gdwarf-2 -I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include -I/Users/enginesharedmac/Deploy/xz-5.2.5/include' 'LDFLAGS=/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a /Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a -mmacosx-version-min=13.0'
 
 
 # Subdirectories with code

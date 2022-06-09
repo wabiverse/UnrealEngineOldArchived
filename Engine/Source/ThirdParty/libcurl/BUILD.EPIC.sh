@@ -1031,9 +1031,9 @@ build_environment()
 			# get:   xcode 6.4
 			# mount: xcode 6.4
 			#
-			# XCODEPATH=Xcode.app/Contents/Developer/Platforms/MacOSX.platform
+			# XCODEPATH=Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform
 			# SDKPATH=$XCODEPATH/Developer/SDKs
-			# sudo cp -a /Volumes/Xcode/$XcodeSDKpath/MacOSX10.9.sdk /Applications/$XcodeSDKpath/.
+			# sudo cp -a /Volumes/Xcode/$XcodeSDKpath/MacOSX13.0.sdk /Applications/$XcodeSDKpath/.
 			# sudo sed -e 's/>10.\d+</10.9/' /Applications/$XCODEPATH/Info.plist
 			#
 			# follow these instructions

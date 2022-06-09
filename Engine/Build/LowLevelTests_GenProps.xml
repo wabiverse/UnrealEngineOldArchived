@@ -7,7 +7,7 @@
   <Property Name="HeadlessChaosShort" Value="Headless Chaos" />
   <Property Name="SelfTarget" Value="LowLevelTests" />
   <Property Name="HeadlessChaosTarget" Value="HeadlessChaos" />
-  <Property Name="SelfBinariesRelative" Value="Engine\Binaries" />
+  <Property Name="SelfBinariesRelative" Value="Engine/Binaries" />
   <Property Name="HeadlessChaosBinariesRelative" Value="Engine\Binaries" />
   <Property Name="SelfReportType" Value="console" />
   <Property Name="HeadlessChaosReportType" Value="console" />

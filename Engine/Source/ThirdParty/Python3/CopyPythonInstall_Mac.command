@@ -20,13 +20,13 @@
 #    - Copy zlib from Engine/Source/ThirdParty/zlib into $HOME/Deploy
 #    - Build lzma for x64 architecture.
 #       cd $HOME/Build/xz-5.2.5
-#		./configure --prefix=$HOME/Deploy/xz-5.2.5 --disable-xz --disable-lzma-links --disable-scripts --disable-doc CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=10.15 -gdwarf-2 -arch x86_64" CPPFLAGS="-mmacosx-version-min=10.15 -gdwarf-2 -arch x86_64" LDFLAGS="-mmacosx-version-min=10.15 -arch x86_64"
+#		./configure --prefix=$HOME/Deploy/xz-5.2.5 --disable-xz --disable-lzma-links --disable-scripts --disable-doc CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=13.0 -gdwarf-2 -arch x86_64" CPPFLAGS="-mmacosx-version-min=13.0 -gdwarf-2 -arch x86_64" LDFLAGS="-mmacosx-version-min=13.0 -arch x86_64"
 #       make -j28
 #       make install
 #       mv $HOME/Deploy/xz-5.2.5/lib $HOME/Deploy/xz-5.2.5/lib_x64
 #    - Build lzma for ARM architecture
 #       make clean
-#		./configure --prefix=$HOME/Deploy/xz-5.2.5 --host=aarch64-apple-darwin --disable-xz --disable-lzma-links --disable-scripts --disable-doc CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=10.15 -gdwarf-2 -arch arm64" CPPFLAGS="-mmacosx-version-min=10.15 -gdwarf-2 -arch arm64" LDFLAGS="-mmacosx-version-min=10.15 -arch arm64"
+#		./configure --prefix=$HOME/Deploy/xz-5.2.5 --host=aarch64-apple-darwin --disable-xz --disable-lzma-links --disable-scripts --disable-doc CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=13.0 -gdwarf-2 -arch arm64" CPPFLAGS="-mmacosx-version-min=13.0 -gdwarf-2 -arch arm64" LDFLAGS="-mmacosx-version-min=13.0 -arch arm64"
 #       make -j28
 #       make install
 #       mv $HOME/Deploy/xz-5.2.5/lib $HOME/Deploy/xz-5.2.5/lib_arm
@@ -38,7 +38,7 @@
 #        export ZLIB_HOME=$HOME/Deploy/zlib/v1.2.8
 #        export LZMA_HOME=$HOME/Deploy/xz-5.2.5
 #    - Go to the source directory '$HOME/Build/python-3.9.7' and run the configure command (might need some fixes)
-#        ./configure --prefix=$HOME/Deploy/Python3.9.7 --enable-shared --enable-universalsdk=`xcrun --sdk macosx --show-sdk-path` --with-universal-archs=universal2 --enable-optimizations --with-openssl="$SSL_HOME" CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=10.15 -gdwarf-2 -I$ZLIB_HOME/include -I$LZMA_HOME/include" CPPFLAGS="-mmacosx-version-min=10.15 -gdwarf-2 -I$ZLIB_HOME/include -I$LZMA_HOME/include" LDFLAGS="$ZLIB_HOME/lib/libz.a $LZMA_HOME/lib/liblzma.a -mmacosx-version-min=10.15"
+#        ./configure --prefix=$HOME/Deploy/Python3.9.7 --enable-shared --enable-universalsdk=`xcrun --sdk macosx --show-sdk-path` --with-universal-archs=universal2 --enable-optimizations --with-openssl="$SSL_HOME" CFLAGS="-isysroot `xcrun --sdk macosx --show-sdk-path` -mmacosx-version-min=13.0 -gdwarf-2 -I$ZLIB_HOME/include -I$LZMA_HOME/include" CPPFLAGS="-mmacosx-version-min=13.0 -gdwarf-2 -I$ZLIB_HOME/include -I$LZMA_HOME/include" LDFLAGS="$ZLIB_HOME/lib/libz.a $LZMA_HOME/lib/liblzma.a -mmacosx-version-min=13.0"
 #        make -j28
 #        make install
 #    - Adjust the variables below according to your setup.

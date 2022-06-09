@@ -947,7 +947,7 @@ void CompileShader_Metal(const FShaderCompilerInput& _Input,FShaderCompilerOutpu
 		}
 		else
 		{
-			MinOSVersion = TEXT("-mmacosx-version-min=10.15");
+			MinOSVersion = TEXT("-mmacosx-version-min=13.0");
 		}
 		break;
             

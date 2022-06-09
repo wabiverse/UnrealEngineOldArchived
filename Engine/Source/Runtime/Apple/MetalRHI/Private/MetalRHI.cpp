@@ -91,7 +91,7 @@ static void VerifyMetalCompiler()
 	// This will also issue a popup dialog which will attempt to install command line tools which we don't want from the Editor
 	
 	// xcode-select --print-path
-	// Can print out /Applications/Xcode.app/Contents/Developer OR /Library/Developer/CommandLineTools
+	// Can print out /Applications/Xcode-beta.app/Contents/Developer OR /Library/Developer/CommandLineTools
 	// CommandLineTools is no good for us as the Metal compiler isn't included
 	{
 		int32 ReturnCode = -1;
@@ -114,7 +114,7 @@ static void VerifyMetalCompiler()
 		
 		if(!bFoundXCode)
 		{
-			FMessageDialog::Open(EAppMsgType::Ok, FText(NSLOCTEXT("MetalRHI", "XCodeMissingInstall", "Can't find Xcode install for Metal compiler. Please install Xcode and run Xcode.app to accept license or ensure active developer directory is set to current Xcode installation using xcode-select.")));
+			FMessageDialog::Open(EAppMsgType::Ok, FText(NSLOCTEXT("MetalRHI", "XCodeMissingInstall", "Can't find Xcode install for Metal compiler. Please install Xcode and run Xcode-beta.app to accept license or ensure active developer directory is set to current Xcode installation using xcode-select.")));
 			FPlatformMisc::RequestExit(true);
 			return;
 		}
@@ -136,7 +136,7 @@ static void VerifyMetalCompiler()
 	
 	
 	// xcrun will return non zero if using command line tools
-	// This can fail for license agreement as well or wrong command line tools set i.e set to /Library/Developer/CommandLineTools rather than Applications/Xcode.app/Contents/Developer
+	// This can fail for license agreement as well or wrong command line tools set i.e set to /Library/Developer/CommandLineTools rather than Applications/Xcode-beta.app/Contents/Developer
 	{
 		int ReturnCode = -1;
 		FPlatformProcess::ExecProcess(TEXT("/usr/bin/xcrun"), TEXT("-sdk macosx metal -v"), &ReturnCode, &OutStdOut, &OutStdErr);

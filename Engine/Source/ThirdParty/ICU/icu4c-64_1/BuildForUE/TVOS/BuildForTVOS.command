@@ -1,7 +1,7 @@
 #!/bin/sh
 # Copyright Epic Games, Inc. All Rights Reserved.
 
-PATH=$PATH:/Applications/CMake.app/Contents/bin/:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+PATH=$PATH:/Applications/CMake.app/Contents/bin/:/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
 CUR_PATH=`dirname $0`
 PATH_TO_CMAKE_FILE="$CUR_PATH/.."

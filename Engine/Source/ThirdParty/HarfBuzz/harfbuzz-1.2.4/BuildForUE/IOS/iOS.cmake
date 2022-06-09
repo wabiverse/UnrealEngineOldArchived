@@ -51,11 +51,11 @@ endif (CMAKE_UNAME)
 #include (CMakeForceCompiler)
 #set (CMAKE_C_COMPILER /usr/bin/clang)
 #set (CMAKE_CXX_COMPILER /usr/bin/clang++)
-#set (CMAKE_AR "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar" CACHE FILEPATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar" FORCE)
+#set (CMAKE_AR "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar" CACHE FILEPATH "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar" FORCE)
 
 # Use libtool instead of AR for the creation of achives
-set(CMAKE_C_ARCHIVE_CREATE "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -syslibroot ${CMAKE_IOS_SDK_ROOT} -o <TARGET> <OBJECTS>")
-set(CMAKE_CXX_ARCHIVE_CREATE "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -syslibroot ${CMAKE_IOS_SDK_ROOT} -o <TARGET> <OBJECTS>")
+set(CMAKE_C_ARCHIVE_CREATE "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -syslibroot ${CMAKE_IOS_SDK_ROOT} -o <TARGET> <OBJECTS>")
+set(CMAKE_CXX_ARCHIVE_CREATE "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -syslibroot ${CMAKE_IOS_SDK_ROOT} -o <TARGET> <OBJECTS>")
 
 # Skip the platform compiler checks for cross compiling
 set (CMAKE_CXX_COMPILER_WORKS TRUE)

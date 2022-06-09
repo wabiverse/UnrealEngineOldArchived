@@ -179,11 +179,11 @@ public class IOSPlatform : Platform
 			Command = "osascript";
 			Params =
 				" -e \"try\"" +
-				" -e   \"tell application \\\"Finder\\\" to delete POSIX file \\\"/Applications/Xcode.app\\\"\"" +
+				" -e   \"tell application \\\"Finder\\\" to delete POSIX file \\\"/Applications/Xcode-beta.app\\\"\"" +
 				" -e \"end try\"" +
 				" -e \"do shell script \\\"cd /Applications; xip --expand $(CopyOutputPath);\\\"\"" +
 				" -e \"try\"" +
-				" -e   \"do shell script \\\"xcode-select -s /Applications/Xcode.app; xcode-select --install; xcodebuild -license accept; xcodebuild -runFirstLaunch\\\" with administrator privileges\"" +
+				" -e   \"do shell script \\\"xcode-select -s /Applications/Xcode-beta.app; xcode-select --install; xcodebuild -license accept; xcodebuild -runFirstLaunch\\\" with administrator privileges\"" +
 				" -e \"end try\"";
 		}
 		else if (UnrealBuildTool.BuildHostPlatform.Current.Platform == UnrealTargetPlatform.Win64)

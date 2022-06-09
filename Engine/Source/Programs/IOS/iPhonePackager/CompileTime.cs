@@ -28,7 +28,7 @@ namespace iPhonePackager
 	{
 		/**
 		 * Location of the Xcode installation on the Mac.  For example: 
-		 * "/Applications/Xcode.app/Contents/Developer"
+		 * "/Applications/Xcode-beta.app/Contents/Developer"
 		 */
 		private static string XcodeDeveloperDir = "";
 
@@ -109,7 +109,7 @@ namespace iPhonePackager
 		{
 			string MachineName = Environment.MachineName;
 
-			XcodeDeveloperDir = Utilities.GetEnvironmentVariable("ue.XcodeDeveloperDir", "/Applications/Xcode.app/Contents/Developer/");
+			XcodeDeveloperDir = Utilities.GetEnvironmentVariable("ue.XcodeDeveloperDir", "/Applications/Xcode-beta.app/Contents/Developer/");
 
 			// MacName=%ue4.iPhone_SigningServerName%
 			MacName = Config.OverrideMacName != null ? Config.OverrideMacName : Utilities.GetEnvironmentVariable("ue.IOSSigningServer", "a1487");

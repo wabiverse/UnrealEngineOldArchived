@@ -282,8 +282,8 @@ class UnixCCompiler(CCompiler):
             # keep in mind that the base filename of the returned SDK library
             # file might have a different extension from that of the library
             # file installed on the running system, for example:
-            #   /Applications/Xcode.app/Contents/Developer/Platforms/
-            #       MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/
+            #   /Applications/Xcode-beta.app/Contents/Developer/Platforms/
+            #       MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/
             #       usr/lib/libedit.tbd
             # vs
             #   /usr/lib/libedit.dylib

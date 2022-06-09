@@ -301,7 +301,7 @@
       // when XCode 11.0 and Mac deployment target macOS 10.15 is https://trac.macports.org/ticket/58776#no1
       #ifdef EIGEN_VECTORIZE_AVX
         #undef EIGEN_VECTORIZE_AVX
-        #warning "Disabling AVX support: clang compiler shipped with XCode 11.[012] generates broken assembly with -macosx-version-min=10.15 and AVX enabled. "
+        #warning "Disabling AVX support: clang compiler shipped with XCode 11.[012] generates broken assembly with -macosx-version-min=13.0 and AVX enabled. "
         #ifdef EIGEN_VECTORIZE_AVX2
           #undef EIGEN_VECTORIZE_AVX2
         #endif
@@ -318,13 +318,13 @@
           #undef EIGEN_VECTORIZE_AVX512ER
         #endif
       #endif
-      // NOTE: Confirmed test failures in XCode 11.0, and XCode 11.2 with  -macosx-version-min=10.15 and AVX
-      // NOTE using -macosx-version-min=10.15 with Xcode 11.0 results in runtime segmentation faults in many tests, 11.2 produce core dumps in 3 tests
+      // NOTE: Confirmed test failures in XCode 11.0, and XCode 11.2 with  -macosx-version-min=13.0 and AVX
+      // NOTE using -macosx-version-min=13.0 with Xcode 11.0 results in runtime segmentation faults in many tests, 11.2 produce core dumps in 3 tests
       // NOTE using -macosx-version-min=10.14 produces functioning and passing tests in all cases
       // NOTE __clang_version__ "11.0.0 (clang-1100.0.33.8)"  XCode 11.0 <- Produces many segfault and core dumping tests
-      //                                                                    with  -macosx-version-min=10.15 and AVX
+      //                                                                    with  -macosx-version-min=13.0 and AVX
       // NOTE __clang_version__ "11.0.0 (clang-1100.0.33.12)" XCode 11.2 <- Produces 3 core dumping tests with  
-      //                                                                    -macosx-version-min=10.15 and AVX
+      //                                                                    -macosx-version-min=13.0 and AVX
     #endif
 
     // include files

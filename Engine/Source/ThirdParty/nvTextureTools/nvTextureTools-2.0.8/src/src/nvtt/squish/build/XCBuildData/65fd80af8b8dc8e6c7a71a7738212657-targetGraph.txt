@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+squish in squish, no dependencies

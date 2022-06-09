@@ -124,8 +124,8 @@ CXX = ['xcrun', 'clang',
     '-arch', 'x86_64',
     '-std=c++17',
     '-stdlib=libc++',
-#    '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk',
-    '-target', 'x86_64-apple-macos10.15',
+#    '-isysroot', '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk',
+    '-target', 'x86_64-apple-macos13.0',
     ]
 
 CXX_FLAGS = []
@@ -190,7 +190,7 @@ assert os.path.isfile(DatasmithSDKlib), DatasmithSDKlib
 link_cmd = [
     'xcrun',
     'clang++', 
-    '-target', 'x86_64-apple-macos10.15',
+    '-target', 'x86_64-apple-macos13.0',
     '-Xlinker', '-export_dynamic',
     '-Xlinker', '-no_deduplicate',
     '-stdlib=libc++',

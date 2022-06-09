@@ -359,8 +359,8 @@ CFStringRef copy_xcode_dev_path(void) {
         
         if (env_dev_path && strlen(env_dev_path) > 0) {
             strcpy(xcode_dev_path, env_dev_path);
-            // DEVELOPER_DIR should refer to Xcode.app/Contents/Developer, but
-            // xcode-select and friends have an extension to fix the path, if it points to Xcode.app/.
+            // DEVELOPER_DIR should refer to Xcode-beta.app/Contents/Developer, but
+            // xcode-select and friends have an extension to fix the path, if it points to Xcode-beta.app/.
             static char dev_subdir[256] = { '\0' };
             strcat(strcat(dev_subdir, env_dev_path), "/Contents/Developer");
             struct stat sb;
@@ -406,7 +406,7 @@ CFStringRef copy_xcode_path_for_impl(CFStringRef rootPath, CFStringRef subPath, 
 
 CFStringRef copy_xcode_path_for(CFStringRef subPath, CFStringRef search) {
     CFStringRef xcodeDevPath = copy_xcode_dev_path();
-    CFStringRef defaultXcodeDevPath = CFSTR("/Applications/Xcode.app/Contents/Developer");
+    CFStringRef defaultXcodeDevPath = CFSTR("/Applications/Xcode-beta.app/Contents/Developer");
     CFStringRef path = NULL;
     const char* home = get_home();
     

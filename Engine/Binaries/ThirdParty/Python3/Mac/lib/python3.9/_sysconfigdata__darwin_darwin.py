@@ -15,10 +15,10 @@ build_time_vars = {'ABIFLAGS': '',
  'BLDLIBRARY': '-L. -lpython3.9',
  'BLDSHARED': 'gcc -bundle -undefined dynamic_lookup -arch arm64 -arch x86_64 '
               '-isysroot '
-              '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+              '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
               '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
               '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-              '-mmacosx-version-min=10.15',
+              '-mmacosx-version-min=13.0',
  'BUILDEXE': '.exe',
  'BUILDPYTHON': 'python.exe',
  'BUILD_GNU_TYPE': 'x86_64-apple-darwin20.6.0',
@@ -27,10 +27,10 @@ build_time_vars = {'ABIFLAGS': '',
  'CCSHARED': '',
  'CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g '
            '-fwrapv -O3 -Wall -arch arm64 -arch x86_64 -isysroot '
-           '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+           '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
            '-isysroot '
-           '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-           '-mmacosx-version-min=10.15 -gdwarf-2 '
+           '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+           '-mmacosx-version-min=13.0 -gdwarf-2 '
            '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
            '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'CFLAGSFORSHARED': '',
@@ -38,10 +38,10 @@ build_time_vars = {'ABIFLAGS': '',
  'CONFIGFILES': 'configure configure.ac acconfig.h pyconfig.h.in '
                 'Makefile.pre.in',
  'CONFIGURE_CFLAGS': '-arch arm64 -arch x86_64 -isysroot '
-                     '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                     '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                      '-isysroot '
-                     '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                     '-mmacosx-version-min=10.15 -gdwarf-2 '
+                     '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                     '-mmacosx-version-min=13.0 -gdwarf-2 '
                      '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                      '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'CONFIGURE_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
@@ -51,32 +51,32 @@ build_time_vars = {'ABIFLAGS': '',
                             '-Werror=implicit-function-declaration '
                             '-fvisibility=hidden',
  'CONFIGURE_CPPFLAGS': '-isysroot '
-                       '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                       '-mmacosx-version-min=10.15 -gdwarf-2 '
+                       '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                       '-mmacosx-version-min=13.0 -gdwarf-2 '
                        '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                        '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'CONFIGURE_LDFLAGS': '-arch arm64 -arch x86_64 -isysroot '
-                      '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                      '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                       '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
                       '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-                      '-mmacosx-version-min=10.15',
+                      '-mmacosx-version-min=13.0',
  'CONFIGURE_LDFLAGS_NODIST': '',
  'CONFIG_ARGS': "'--prefix=/Users/enginesharedmac/Deploy/Python3.9.7' "
                 "'--enable-shared' "
-                "'--enable-universalsdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk' "
+                "'--enable-universalsdk=/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk' "
                 "'--with-universal-archs=universal2' '--enable-optimizations' "
                 "'--with-openssl=/Users/enginesharedmac/Deploy/OpenSSL/1.1.1k' "
                 "'CFLAGS=-isysroot "
-                '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                '-mmacosx-version-min=10.15 -gdwarf-2 '
+                '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                '-mmacosx-version-min=13.0 -gdwarf-2 '
                 '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                 "-I/Users/enginesharedmac/Deploy/xz-5.2.5/include' "
-                "'CPPFLAGS=-mmacosx-version-min=10.15 -gdwarf-2 "
+                "'CPPFLAGS=-mmacosx-version-min=13.0 -gdwarf-2 "
                 '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                 "-I/Users/enginesharedmac/Deploy/xz-5.2.5/include' "
                 "'LDFLAGS=/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a "
                 '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-                "-mmacosx-version-min=10.15'",
+                "-mmacosx-version-min=13.0'",
  'CONFINCLUDEDIR': '/Users/enginesharedmac/Deploy/Python3.9.7/include',
  'CONFINCLUDEPY': '/Users/enginesharedmac/Deploy/Python3.9.7/include/python3.9',
  'COREPYTHONPATH': '',
@@ -85,8 +85,8 @@ build_time_vars = {'ABIFLAGS': '',
  'COVERAGE_REPORT_OPTIONS': '--no-branch-coverage --title "CPython lcov '
                             'report"',
  'CPPFLAGS': '-I. -I./Include -isysroot '
-             '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-             '-mmacosx-version-min=10.15 -gdwarf-2 '
+             '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+             '-mmacosx-version-min=13.0 -gdwarf-2 '
              '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
              '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'CXX': 'g++',
@@ -572,18 +572,18 @@ build_time_vars = {'ABIFLAGS': '',
  'IO_OBJS': '\\',
  'LDCXXSHARED': 'g++ -bundle -undefined dynamic_lookup',
  'LDFLAGS': '-arch arm64 -arch x86_64 -isysroot '
-            '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+            '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
             '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
             '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-            '-mmacosx-version-min=10.15',
+            '-mmacosx-version-min=13.0',
  'LDLIBRARY': 'libpython3.9.dylib',
  'LDLIBRARYDIR': '',
  'LDSHARED': 'gcc -bundle -undefined dynamic_lookup -arch arm64 -arch x86_64 '
              '-isysroot '
-             '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+             '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
              '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
              '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-             '-mmacosx-version-min=10.15',
+             '-mmacosx-version-min=13.0',
  'LDVERSION': '3.9',
  'LIBC': '',
  'LIBDEST': '/Users/enginesharedmac/Deploy/Python3.9.7/lib/python3.9',
@@ -684,10 +684,10 @@ build_time_vars = {'ABIFLAGS': '',
  'PY_BUILTIN_MODULE_CFLAGS': '-Wno-unused-result -Wsign-compare '
                              '-Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall '
                              '-arch arm64 -arch x86_64 -isysroot '
-                             '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                             '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                              '-isysroot '
-                             '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                             '-mmacosx-version-min=10.15 -gdwarf-2 '
+                             '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                             '-mmacosx-version-min=13.0 -gdwarf-2 '
                              '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                              '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include '
                              '-std=c99 -Wextra -Wno-unused-result '
@@ -698,17 +698,17 @@ build_time_vars = {'ABIFLAGS': '',
                              '-fvisibility=hidden '
                              '-fprofile-instr-use=code.profclangd '
                              '-I./Include/internal -I. -I./Include -isysroot '
-                             '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                             '-mmacosx-version-min=10.15 -gdwarf-2 '
+                             '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                             '-mmacosx-version-min=13.0 -gdwarf-2 '
                              '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                              '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include '
                              '-DPy_BUILD_CORE_BUILTIN',
  'PY_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG '
               '-g -fwrapv -O3 -Wall -arch arm64 -arch x86_64 -isysroot '
-              '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+              '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
               '-isysroot '
-              '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-              '-mmacosx-version-min=10.15 -gdwarf-2 '
+              '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+              '-mmacosx-version-min=13.0 -gdwarf-2 '
               '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
               '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'PY_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
@@ -721,10 +721,10 @@ build_time_vars = {'ABIFLAGS': '',
  'PY_CORE_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code '
                    '-DNDEBUG -g -fwrapv -O3 -Wall -arch arm64 -arch x86_64 '
                    '-isysroot '
-                   '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                   '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                    '-isysroot '
-                   '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                   '-mmacosx-version-min=10.15 -gdwarf-2 '
+                   '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                   '-mmacosx-version-min=13.0 -gdwarf-2 '
                    '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                    '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include -std=c99 '
                    '-Wextra -Wno-unused-result -Wno-unused-parameter '
@@ -732,37 +732,37 @@ build_time_vars = {'ABIFLAGS': '',
                    '-Werror=implicit-function-declaration -fvisibility=hidden '
                    '-fprofile-instr-use=code.profclangd -I./Include/internal '
                    '-I. -I./Include -isysroot '
-                   '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                   '-mmacosx-version-min=10.15 -gdwarf-2 '
+                   '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                   '-mmacosx-version-min=13.0 -gdwarf-2 '
                    '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                    '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include '
                    '-DPy_BUILD_CORE',
  'PY_CORE_LDFLAGS': '-arch arm64 -arch x86_64 -isysroot '
-                    '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                    '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                     '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
                     '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-                    '-mmacosx-version-min=10.15',
+                    '-mmacosx-version-min=13.0',
  'PY_CPPFLAGS': '-I. -I./Include -isysroot '
-                '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                '-mmacosx-version-min=10.15 -gdwarf-2 '
+                '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                '-mmacosx-version-min=13.0 -gdwarf-2 '
                 '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                 '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'PY_FORMAT_SIZE_T': '"z"',
  'PY_LDFLAGS': '-arch arm64 -arch x86_64 -isysroot '
-               '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+               '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                '/Users/enginesharedmac/Deploy/zlib/v1.2.8/lib/libz.a '
                '/Users/enginesharedmac/Deploy/xz-5.2.5/lib/liblzma.a '
-               '-mmacosx-version-min=10.15',
+               '-mmacosx-version-min=13.0',
  'PY_LDFLAGS_NODIST': '',
  'PY_SSL_DEFAULT_CIPHERS': 1,
  'PY_SSL_DEFAULT_CIPHER_STRING': 0,
  'PY_STDMODULE_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code '
                         '-DNDEBUG -g -fwrapv -O3 -Wall -arch arm64 -arch '
                         'x86_64 -isysroot '
-                        '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
+                        '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
                         '-isysroot '
-                        '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                        '-mmacosx-version-min=10.15 -gdwarf-2 '
+                        '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                        '-mmacosx-version-min=13.0 -gdwarf-2 '
                         '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                         '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include '
                         '-std=c99 -Wextra -Wno-unused-result '
@@ -772,8 +772,8 @@ build_time_vars = {'ABIFLAGS': '',
                         '-fvisibility=hidden '
                         '-fprofile-instr-use=code.profclangd '
                         '-I./Include/internal -I. -I./Include -isysroot '
-                        '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk '
-                        '-mmacosx-version-min=10.15 -gdwarf-2 '
+                        '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk '
+                        '-mmacosx-version-min=13.0 -gdwarf-2 '
                         '-I/Users/enginesharedmac/Deploy/zlib/v1.2.8/include '
                         '-I/Users/enginesharedmac/Deploy/xz-5.2.5/include',
  'Py_DEBUG': 0,
@@ -837,7 +837,7 @@ build_time_vars = {'ABIFLAGS': '',
  'TM_IN_SYS_TIME': 0,
  'TZPATH': '/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo',
  'UNICODE_DEPS': '\\',
- 'UNIVERSALSDK': '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk',
+ 'UNIVERSALSDK': '/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk',
  'UPDATE_FILE': 'python3 ./Tools/scripts/update_file.py',
  'USE_COMPUTED_GOTOS': 0,
  'VERSION': '3.9',

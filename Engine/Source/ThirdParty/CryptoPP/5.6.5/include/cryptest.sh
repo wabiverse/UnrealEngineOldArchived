@@ -5501,7 +5501,7 @@ fi
 if [[ "$IS_DARWIN" -ne "0" ]]; then
 	XCODE_CXX=$(find /Applications/Xcode*.app/Contents/Developer -name clang++ 2>/dev/null | head -1)
 	if [[ (-z "$XCODE_CXX") ]]; then
-		XCODE_CXX=$(find /Developer/Applications/Xcode.app -name clang++ 2>/dev/null | head -1)
+		XCODE_CXX=$(find /Developer/Applications/Xcode-beta.app -name clang++ 2>/dev/null | head -1)
 	fi
 
 	if [[ !(-z "$XCODE_CXX") ]]; then

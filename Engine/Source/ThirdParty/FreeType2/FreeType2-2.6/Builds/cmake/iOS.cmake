@@ -174,7 +174,7 @@ endif (${IOS_PLATFORM} STREQUAL "OS")
 # note that Xcode 4.3 changed the installation location; choose the most
 # recent one available
 set(XCODE_POST_43_ROOT
-  "/Applications/Xcode.app/Contents/Developer/Platforms/${IOS_PLATFORM_LOCATION}/Developer")
+  "/Applications/Xcode-beta.app/Contents/Developer/Platforms/${IOS_PLATFORM_LOCATION}/Developer")
 set(XCODE_PRE_43_ROOT
   "/Developer/Platforms/${IOS_PLATFORM_LOCATION}/Developer")
 

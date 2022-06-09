@@ -49,7 +49,7 @@ namespace UnrealBuildTool
 				}
 			}
 
-			if (bVerbose && !DeveloperDir.StartsWith("/Applications/Xcode.app"))
+			if (bVerbose && !DeveloperDir.StartsWith("/Applications/Xcode-beta.app"))
 			{
 				Log.TraceInformationOnce("Compiling with non-standard Xcode ({0}): {1}", Reason, DeveloperDir);
 			}
@@ -128,7 +128,7 @@ namespace UnrealBuildTool
 				catch (Exception Ex)
 				{
 					// on any exception, just use the backup version
-					Logger.LogInformation("Triggered an exception while looking for SDK directory in Xcode.app");
+					Logger.LogInformation("Triggered an exception while looking for SDK directory in Xcode-beta.app");
 					Logger.LogInformation("{Ex}", Ex.ToString());
 				}
 			}
