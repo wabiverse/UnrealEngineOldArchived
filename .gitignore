@@ -252,7 +252,8 @@ Saved/
 
 # Ignore VS / VS Code settings directory
 .vs
-.vscode
+.vscode/*
+!.vscode/c_cpp_properties.json
 
 # Ignore CLion directory
 .idea/
