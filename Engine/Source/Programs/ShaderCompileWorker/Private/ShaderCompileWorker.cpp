@@ -1144,7 +1144,10 @@ static int32 GuardedMain(int32 argc, TCHAR* argv[], bool bDirectMode)
 		};
 
 	AtomicSave(IniBootstrapFilename,     [](const FString& TmpFile) { GConfig->SaveCurrentStateForBootstrap(*TmpFile); });
+
+#if !IS_MONOLITHIC
 	AtomicSave(ModulesBootstrapFilename, [](const FString& TmpFile) { FModuleManager::Get().SaveCurrentStateForBootstrap(*TmpFile); });
+#endif /* !IS_MONOLITHIC */
 
 	// We just enumerate the shader formats here for debugging.
 	const TArray<const class IShaderFormat*>& ShaderFormats = GetShaderFormats();
