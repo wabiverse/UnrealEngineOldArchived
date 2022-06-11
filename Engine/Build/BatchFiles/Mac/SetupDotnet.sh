@@ -4,22 +4,17 @@
 START_DIR=`pwd`
 cd "$1"
 
+UE_USE_SYSTEM_DOTNET=1
 IS_DOTNET_INSTALLED=0
 DOTNET_VERSION_PATH=$(command -v dotnet) || true
 
 if [ "$UE_USE_SYSTEM_DOTNET" == "1" ] && [ ! $DOTNET_VERSION_PATH == "" ] && [ -f $DOTNET_VERSION_PATH ]; then
 	# If dotnet is installed, check that it has a new enough version of the SDK
-	DOTNET_SDKS=(`dotnet --list-sdks | grep -P "(\d*)\.(\d*)\..* \[(.*)\]"`)
+	DOTNET_SDKS=(`dotnet --list-sdks | ggrep -P "(\d*)\.(\d*)\..* \[(.*)\]"`)
 	for DOTNET_SDK in $DOTNET_SDKS
 	do
-		if [ ${DOTNET_SDK[0]} -gt 3 ]; then
+		if [ "$DOTNET_SDK" == "6.0.300" ]; then
 			IS_DOTNET_INSTALLED=1
-		fi
-
-		if [ ${DOTNET_SDK[0]} -eq 3 ]; then
-			if [ ${DOTNET_SDK[1]} -ge 1 ]; then
-				IS_DOTNET_INSTALLED=1
-			fi
 		fi
 	done
 	if [ $IS_DOTNET_INSTALLED -eq 0 ]; then
