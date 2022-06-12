@@ -223,7 +223,7 @@ namespace UnrealBuildTool
 			Result += string.Format(" -isysroot \"{0}\"", SDKPath);
 			Result += " -mmacosx-version-min=" + Settings.MacOSVersion;
 			Result += " -dead_strip";
-			Result += " -Wl,-fatal_warnings";
+			// Result += " -Wl,-fatal_warnings";
 
 			if (Options.HasFlag(ClangToolChainOptions.EnableAddressSanitizer) || Options.HasFlag(ClangToolChainOptions.EnableThreadSanitizer) || Options.HasFlag(ClangToolChainOptions.EnableUndefinedBehaviorSanitizer))
 			{
