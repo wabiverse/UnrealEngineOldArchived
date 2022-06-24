@@ -88,7 +88,7 @@ The steps below take you through cloning your own private fork, then compiling a
 
 1.  Open your source folder in Finder and double-click **Setup.command** to download binary content for the engine. You can close the Terminal window afterwards.
 
-    If you downloaded the source as a .zip file, you may see a warning about it being from an unidentified developer, because .zip files on GitHub aren't digitally signed. To work around this, right-click **Setup.command**, select **Open**, then click the **Open** button.
+    If you downloaded the source as a .zip file, you may see a warning about it being from an unidentified developer, because .zip files on GitHub aren't digitally signed. To work around this, open the terminal and run `xattr -cr /Downloads/{folder}`.
 
 1.  In the same folder, double-click **GenerateProjectFiles.command**. It should take less than a minute to complete.  
 
